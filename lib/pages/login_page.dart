@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
           style: TextStyle(
             fontSize: 20,
             color: Colors.blueGrey,
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.lime,
             fontWeight: FontWeight.bold,
           ),
         ),
