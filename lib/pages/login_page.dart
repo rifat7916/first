@@ -52,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
                       labelText: "Username",
                     ),
                     validator: (String? value) {
-                      if (value != null && value.isEmpty) {
+                      if ( value!.isEmpty) {
                         return "Username can't be empty";
                       }
 
@@ -72,7 +72,8 @@ class _LoginPageState extends State<LoginPage> {
                     validator: (String? value) {
                       if (value!.isEmpty) {
                         return "Password can't be empty";
-                      } else if (value.length > 6) {
+                      }
+                      else if (value.length > 6) {
                         return "Password length should be at least 6";
                       }
                       return null;
@@ -87,11 +88,11 @@ class _LoginPageState extends State<LoginPage> {
                     child: InkWell(
                       onTap: () => moveToHome(context),
                       child: AnimatedContainer(
-                        duration: Duration(seconds: 1),
-                        width: changeButton ? 100 : 150,
-                        height: 50,
-                        alignment: Alignment.center,
-                        child: changeButton
+                       duration: Duration(seconds: 1),
+                       width: changeButton ? 100 : 150,
+                       height: 50,
+                       alignment: Alignment.center,
+                       child: changeButton
                             ? Icon(
                                 Icons.done,
                                 color: Colors.white,
