@@ -9,7 +9,16 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalog App"),
+        
+        title: Text("Catalog App",
+        
+        
+        style: TextStyle(color: Colors.black,
+        ),
+        
+        
+        ),
+        
       ),
         body: Center(
             child: Container(
